@@ -1,0 +1,272 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+ 
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*end reset*/
+body{
+	background: #f5f5f5;
+	width: 100%;
+	height: auto;
+}
+.container{
+	max-width: 1170px;
+	margin:0 auto;
+	padding:0 10px;
+}
+#header .container{
+	display:flex;
+}
+.login_container{
+	margin-left:auto;
+	display:flex;
+}
+#header{
+	padding:30px 0;
+	background: #fff;
+}
+.logo{
+	display: flex;
+	align-items: flex-end;
+}
+.title{
+	display: flex;
+	align-items: flex-end;
+	
+}
+.title h4{
+	color:#e0e0e0;
+	font-size:18px;
+	font-family: 'PT Serif', serif;
+	font-style:italic;
+}
+.logo h1{
+	color:#ee4400;
+	font-size:48px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor:pointer;
+}
+.sitename_container{
+	display:flex;
+}
+.fa-key{
+	color:#ee4400;
+	font-size:14px;
+	transform:rotate(270deg);
+	padding: 5px;
+}
+.login__key{
+	display:flex;
+	align-items: center;
+	cursor:pointer;
+}
+.login__key h4{
+	font-family: 'PT Serif', serif;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-style: italic;
+	padding: 5px;
+}
+.contactme button{
+	background: #ee4400;
+	width: 190px;
+	color:#fff;
+	font-family: 'PT Serif', serif;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-style: italic;
+	padding: 15px;
+	border:1px solid #ee4400;
+	margin-left: 30px;
+	cursor:pointer;
+}
+.nav__site{
+	background: #282828;
+	width: 100%;
+	height:auto;
+}
+.nav__site ul{
+	display:flex;
+	list-style:none;
+}
+.nav__site ul li a{
+	color:#fff;
+	text-decoration: none;
+}
+.nav__site ul li{
+	color:#fff;
+	font-size: 18px;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	padding:28px 20px;
+	transition: 0.3s all ease;
+	cursor:pointer;
+}
+.nav__site ul li:hover{
+	background: #ee4400;
+}
+.nav__site .active{
+	background: #ee4400;
+}
+.search{
+	margin-left: auto;
+	padding: 15px;
+}
+.nav__container{
+	display:flex;
+}
+.form input{
+	font-family: 'PT Serif', serif;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-style: italic;
+	padding: 10px;
+	color:#e0e0e0;
+	max-width: 300px;
+}
+.fa-search{
+	position:relative;
+	left:-30px;
+	color:#e0e0e0;
+	cursor: pointer;
+}
+.page__title h1{
+	color:#282828;
+	font-size: 48px;
+	font-family: 'Oswald', sans-serif;
+}
+section{
+	padding: 50px 10px;
+}
+.page__description{
+	max-width: 850px;
+	padding: 50px 0 30px;
+}
+.page__description h2{
+	color:#282828;
+	font-size: 24px;
+	font-family: 'PT Serif', serif;
+	line-height: 1.6;
+}
+.list h4{
+	color:#282828;
+	font-size: 24px;
+	font-family: 'PT Serif', serif;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.list li{
+	color:#282828;
+	font-size: 18px;
+	font-family: 'PT Serif', serif;
+	line-height: 1.7;
+}
+ .list ul{
+	padding:0 30px;
+}
+#news{
+	padding: 10px 10px;
+}
+.news__title h4{
+	color:#ee4400;
+	font-size: 14px;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+}
+.news__section{
+	 display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    grid-template-rows: repeat(2, 200px); 
+    margin:30px auto; 
+}
+
+.news__section>div>p{
+	color:#282828;
+	font-size: 18px;
+	font-family: 'Oswald', sans-serif;
+	padding: 10px 0;
+	line-height: 1.2;
+}
+ #toTop{
+ 	    color: #282828;
+ 	    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+ }
+ .fa-angle-up{
+ 	color: #282828;
+ 	font-size:16px;
+ 	padding-right:10px;
+ }
+
+
+@media screen and (max-width: 600px) {
+	#header .container {
+		flex-direction: column;
+	}
+
+	.nav__container{
+		flex-direction: column;
+	}
+	.nav__site ul {
+		flex-direction: column;
+	}
+	.sitename_container{
+		margin:auto;
+		padding: 10px;
+	}
+	.login_container{
+		margin:auto;
+		padding: 10px;
+	}
+	.search{margin:auto;}
+}
